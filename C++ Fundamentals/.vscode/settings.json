@@ -5,6 +5,7 @@
         "cmath": "cpp",
         "*.c": "cpp",
         "*.h": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "bits/stdc++.h": "cpp"
     }
 }

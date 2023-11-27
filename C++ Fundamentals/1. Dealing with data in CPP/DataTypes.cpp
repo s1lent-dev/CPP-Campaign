@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int sum(int a, int b) // Function is a non primitive data type
