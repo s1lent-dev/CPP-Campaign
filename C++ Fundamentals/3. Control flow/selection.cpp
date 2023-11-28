@@ -73,6 +73,31 @@ int main()
         cout << b << " is not smaller than " << a << endl;
     }
 
+    // Switch case statement
+
+    int case_var = 3;
+
+    switch (case_var)
+    {
+
+    case 1:
+        cout << "case 1 is executed" << endl;
+        break;
+    case 2:
+        cout << "case 2 is executed" << endl;
+        break;
+    case 3:
+        cout << "case 3 is executed" << endl;
+        break;
+    default:
+        cout << "default case is executed" << endl;
+        break;
+    }
+
+    // Conditional operator statement
+
+    int Tern_var = (a > b) ? b + a : b - a;
+    cout << Tern_var << endl;
 
     return 0;
 }
