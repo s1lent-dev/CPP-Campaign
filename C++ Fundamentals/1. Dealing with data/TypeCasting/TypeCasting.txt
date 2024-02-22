@@ -1,0 +1,15 @@
+1. Implicit type casting -->
+
+a] Priority in implicit type casting (less to high priority) ==> bool --> char --> short int --> int --> unsigned int --> long --> unsigned long --> long long --> unsigned long long --> float --> double --> long double
+b] Data loss happens when Type is converted from High priority type to Low priority type
+c] No data loss happens when Type is converted from Low priority type to High priority type
+
+
+2. Explicit type casting -->
+
+a] C style type casting
+b] function style type casting
+c] static type casting
+d] dynamic type casting
+e] const type casting
+f] reinterpret type casting

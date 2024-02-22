@@ -1,82 +1,159 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
-#define size 10
-// Function which takes pointer to first element of an array as parameter
 
-void odd(int *arr)
-{
-
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i] % 2 == 1)
-        {
-            cout << arr[i] << " ";
-        }
-    }
+int add(int x,int y){
+    return x+y;
 }
-// Function which takes Pointer to whole array as parameter
-void even(int (*arr)[size])
-{
-
-    for (int i = 0; i < size; i++)
-    {
-        if ((*arr)[i] % 2 == 0)
-        {
-            cout << (*arr)[i] << " ";
-        }
-    }
+int sub(int x,int y){
+    return x-y;
 }
-int main()
-{
+int mul(int x,int y){
+    return x*y;
+}
+
+int operate(int x,int y, int (*operation)(int,int)){
+    return operation(x,y);
+}
+
+int main(){
 
     /*
     Major concepts regarding pointers and references -->
 
     1. Pointers
     2. References
-    3. Pointers to arrays
-
+    3. Types of pointers --> [Null pointers, Void pointers, Array pointers, Char pointers, Function pointers, Pointers to Pointers, Wild pointers]
+    4. Dynamic memory allocation
 
     */
 
-    // 1. Pointers
-    int num1 = 12;
-    int *ptr1 = &num1; // Pointers declaration --> storing the address of num1 into ptr by sing &(Address operator)
-    int val = *ptr1;   // Dereferencing the address with *(Referencing/Dereferencing operator)
+    // Pointers -->
 
-    cout << num1 << endl;
-    cout << ptr1 << endl;
-    cout << val << endl;
+    cout << "Printing the values after utilizing pointers" << endl;
+    int a = 10;
+    int *ptr = &a; // Pointers declaration / Referencing --> storing the address of a into ptr by using &(Address operator)
+    int b = *ptr; // Dereferencing --> Dereferencing the address with *(Referencing/Dereferencing operator)
 
-    *ptr1 = 21;           // Assigning value to the variable which has ptr as its pointer i.e indirectly ptr* == num1 == 21
-    cout << num1 << endl; // Therefore the num1 will return 21
+    cout << a << " " << ptr << " " << b << "\n" << endl;
 
-    // 2. References
-    int num2 = 24;
-    int &ref = num2; // referencing value of num to ref
 
-    cout << ref << endl;
-    cout << &ref << endl; // Dereferencing the variable with & operator
+    
+    // References -->
+    
+    cout << "Printing the values after utilizing references" << endl;
+    int c = 10;
+    int &ref = c; // References declaration / Referencing --> storing the address of c into ref by using &(Address operator)
+    int d = ref; // Dereferencing --> Dereferencing the address with *(Referencing/Dereferencing operator)
 
-    ref = 42;             // Assigning value to the variable ref which is a reference to num2 variable i.e ref = num2 = 42
-    cout << num2 << endl; // Therefore the num2 will return 42
+    cout << c << " " << &ref << " " << d << "\n" << endl;
 
-    // 3. Pointers to Arrays
 
-    // Pointer to first element of an array
-    int arr1[size] = {12, 21, 30, 39, 48, 57, 66, 75, 84, 93};
 
-    int *arr_ptr1 = arr1; // Or int* arr_ptr = &arr[0]; // Pointer to the first elements of an array
-    odd(arr_ptr1);
+
+    // Types of pointers -->
+
+    cout << "Types of pointers" << endl;
+    // 1] Null pointers --> 
+    
+    cout << "Printing the values after utilizing null pointers" << endl;
+    int *e; // Contains garbage value
+    int *f = NULL; // NULL is constant with vaue 0
+    int *g = 0; // Same as above
+
+    cout << e << " " << f << " " << g << "\n" << endl; // Prints garbage values == 0
+
+    // 2] Void pointers -->
+    
+    cout << "Printing the values after utilizing void pointers" << endl;
+    void *vptr;
+    int h = 10;
+    vptr = &h;  // Void pointers can store address of any object type
+    //int i = *vptr // Error (Void pointers can't be dereferenced) 
+    int i = *(int*)vptr; // you can de-reference the void pointer by typecasting it to int
+    cout << vptr << " " << i << "\n" << endl;
+
+    // 3] Array pointers -->
+    
+    cout << "Printing the values after utilizing array pointers" << endl;
+    int arr[5] = {1,2,3,4,5};
+    int *arr_ptr = arr; // Also can be declared as --> int *ptr1 = &arr[0]; // This is a pointer to the first element of the array
+    int (*Ent_ptr)[5] = &arr;
+    
+    // Traversing array through pointers -->
+    for(int i=0;i<5;i++){
+        cout << *(arr_ptr+i) << " "; // Also can be declared as --> cout << *(arr+i) << " "; and cout << ptr[i] << " ";
+        cout << arr_ptr[i] << " ";
+        cout << *(arr+i) << " ";
+        cout << arr[i] << " ";
+    }
     cout << endl;
+    cout << arr << "-->" << *arr << " " << arr_ptr << "-->" << *arr_ptr << endl;
 
-    // Pointer to entire array
-    int(*Ent_ptr)[size];
+    for(int i = 0;i < 5;i++){
+        cout << *(*Ent_ptr + i) << " ";
+        cout << (*Ent_ptr)[i] << " ";
+        cout << Ent_ptr[i] << " ";
+    }
+    cout << "\n " << endl;
 
-    Ent_ptr = &arr1; // Pointer to entire array
-    even(Ent_ptr);
+    // 4] Char pointers -->
+    
+    cout << "Printing the values after utilizing char pointers" << endl;
+    char ch_arr[] = "Hello";
+    char *ch_ptr = ch_arr;
 
-    // 4.
+    cout << (void *)ch_ptr << " " << ch_ptr << "\n" << endl; // Char_ptr should have address of first character of ch_arr but it prints "Hello"
+    // Because When you use cout << ch_ptr, it treats ch_ptr as a pointer to a null-terminated character array and prints the characters until it encounters the null terminator ('\0'), which marks the end of the string.
+    // so by typecasting ch_ptr to void pointer then it will print the address of the first character of ch_arr
+    
+    // 5] Function pointers -->
+    
+    cout << "Printing the values after utilizing function pointers" << endl;
+    int (*add_ptr) (int,int) = add;
+    int (*sub_ptr) (int,int) = sub;
+    int (*mul_ptr) (int,int) = mul;
+    int (*operate_ptr) (int,int,int (*)(int,int)) = operate;
 
-    return 0;
+    cout << operate_ptr(10,20,add_ptr) << " " << operate_ptr(10,20,sub_ptr) << " " << operate_ptr(10,20,mul_ptr) << endl;
+    // or
+    cout << operate_ptr(10,20,add) << " " << operate_ptr(10,20,sub) << " " << operate_ptr(10,20,mul) << "\n" << endl;
+   
+    // 6] Pointers to pointers -->
+    
+    cout << "Printing the values after utilizing pointers to pointers" << endl;
+    int p = 10;
+    int *q = &p;
+    int **r = &q;
+    int ***s = &r;
+    (*q)++;
+    (**r)++;
+    (***s) += 3;
+    cout << s << " --> " << r << " --> " << q << " --> " << p << endl;
+    // so here , p == *q == **r == ***s == 15
+    // q == &p , *q == p // r == &q , *r == q , **r == p // s == &r , *s == r , **s == q , ***s == p
+    cout << p << " " << *q << " " << **r << " " << ***s << "\n" << endl;
+
+    // 7] Wild pointers -->
+    
+    cout << "Printing the values after utilizing wild pointers" << endl;
+    int *wild_ptr; // The wild pointers points to the random address
+    *wild_ptr = 20;
+
+    cout << wild_ptr << " --> " << *wild_ptr << "\n" << endl;
+
+
+    // Dynamic memory allocation -->
+    
+    cout << "Printing the values after utilizing dynamic memory allocation" << endl;
+    int x = 25;
+    int *DynamicPtr = new int;
+    *DynamicPtr = 50;
+
+    cout << DynamicPtr << " --> " << *DynamicPtr << endl;
+
+    delete DynamicPtr; // Deallocating the memory and then DynamicPtr become "Dangling Pointer"
+
+    cout << DynamicPtr << " --> " << *DynamicPtr << endl; // Dangling pointer which prints garbage value
+
 }

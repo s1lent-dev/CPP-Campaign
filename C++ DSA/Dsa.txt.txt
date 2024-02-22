@@ -1,0 +1,113 @@
+Arrays:
+Sorting Algorithms (e.g., Bubble Sort, Insertion Sort, Merge Sort, Quick Sort)
+Searching Algorithms (e.g., Linear Search, Binary Search)
+Dynamic Programming on Arrays (e.g., Kadane's Algorithm)
+Sliding Window Technique
+Prefix Sum
+Majority Element
+Two Pointers Technique
+Dutch National Flag Algorithm
+Maximum Subarray Sum (Kadane's Algorithm)
+Maximum Product Subarray
+Minimum Size Subarray Sum
+Merge Intervals
+Container with Most Water
+Trapping Rain Water
+Plus One
+
+
+Matrix:
+Matrix Transposition
+Matrix Rotation (Clockwise/Anticlockwise)
+Matrix Search
+Spiral Order Traversal
+Set Matrix Zeroes
+Rotate Image
+Strings:
+String Matching Algorithms (e.g., Naive String Matching, KMP)
+Longest Common Subsequence (LCS)
+Longest Palindromic Substring
+Anagram Detection
+Valid Parentheses
+Rabin-Karp Algorithm (String Matching)
+Z Algorithm (Pattern Searching)
+Manacher's Algorithm (Finding Longest Palindromic Substring)
+Trie (Tree data structure for strings)
+
+
+Stack:
+Basic Stack Operations (Push, Pop)
+Implementing a Min Stack
+Implementing a Max Stack
+Valid Parentheses
+Stock Span Problem
+Next Greater Element
+Evaluate Postfix Expression
+Expression Conversion (Infix to Postfix)
+Largest Rectangle in Histogram
+Design a Stack supporting push, pop, top, and retrieving the minimum element
+Implement a Stack using Queues
+Design a Stack supporting push, pop, top, and constant time minimum element retrieval
+
+
+Queue:
+Basic Queue Operations (Enqueue, Dequeue)
+Implementing a Circular Queue
+Implementing a Deque
+Design a Queue using Stacks
+Design a Circular Queue using Arrays
+Sliding Window Maximum
+Generate Binary Numbers from 1 to N using a Queue
+First Non-Repeating Character in a Stream
+Design and Implement an LRU Cache
+Design and Implement a Circular Deque
+
+
+Linked List:
+Singly Linked List Operations
+Doubly Linked List Operations
+Circular Linked List Operations
+Reverse a Linked List
+Detect Cycle in a Linked List
+Find Middle of a Linked List
+Merge Two Sorted Linked Lists
+Detect Loop in a Linked List
+Remove Duplicates from a Linked List
+Convert Sorted List to Binary Search Tree
+Flatten a Multilevel Doubly Linked List
+
+
+Trees:
+Binary Tree Traversal (Inorder, Preorder, Postorder)
+Binary Search Tree (Insertion, Deletion, Searching)
+AVL Tree Operations
+Red-Black Tree Operations
+Heap Operations (Insert, Delete, Extract-Min/Max)
+Morris Traversal for Inorder Traversal
+Diameter of Binary Tree
+Lowest Common Ancestor (LCA) in Binary Tree
+Construct Binary Tree from Inorder and Postorder/Preorder Traversal
+Serialize and Deserialize Binary Tree
+Level Order Traversal
+Zigzag Level Order Traversal
+
+
+Graphs:
+Depth-First Search (DFS)
+Breadth-First Search (BFS)
+Dijkstra's Algorithm (Shortest Path)
+Bellman-Ford Algorithm (Shortest Path with negative weights)
+Kruskal's Algorithm (Minimum Spanning Tree)
+Prim's Algorithm (Minimum Spanning Tree)
+Floyd-Warshall Algorithm (All Pairs Shortest Path)
+Topological Sorting
+Detect Cycle in a Directed Graph
+Strongly Connected Components (Kosaraju's Algorithm)
+Articulation Points and Bridges
+Traveling Salesman Problem
+
+
+Trie:
+Trie Insertion and Search
+Auto-complete System
+Longest Common Prefix using Trie

@@ -1,0 +1,22 @@
+There are six types of variables in C++:
+1. Local variable
+2. Global variable
+3. Instance variable
+4. Static variable
+5. Automatic variable
+6. External variable
+
+
+There are two ways to define constants in C++:
+1. Pre-processor directive method
+2. "const" keyword mathod
+
+
+There are various types of literals:
+1. Integer literals
+2. Floating point literals
+3. Character literals
+4. String literals
+5. Boolean literals
+6. User defined literals
+

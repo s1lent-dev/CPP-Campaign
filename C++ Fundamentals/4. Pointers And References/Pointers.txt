@@ -1,0 +1,20 @@
+Major concepts regarding pointers and references -->
+
+1. Pointers
+2. References
+3. Types of pointers -->
+    a] Null pointers
+    b] Void pointers 
+    c] Array pointers 
+    d] Char pointers 
+    e] Function pointers  
+    f] Pointers to Pointers 
+    g] Wild pointers
+    h] Dangling pointers
+4. Dynamic memory allocation
+5. Smart Pointers -->
+    a] Unique_ptr
+    b] Shared_ptr
+    c] Weak_ptr
+6. Pointers to classes, structs and unions
+7. Opaque Pointers

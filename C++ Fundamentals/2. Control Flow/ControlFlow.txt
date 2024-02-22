@@ -1,0 +1,28 @@
+There are majorly 3 types of loops -->
+
+1. For loop
+2. While loop
+3. Do - while loop
+4. For each loop
+
+
+There are majorly 3 types of selection statements -->
+
+1. If - else :
+a] If statement
+b] if-else statement
+c] nested if statement
+d] if - else - if statement
+
+2. Switch case statement
+
+3. Conditional operator / Ternary operator
+
+
+
+There are 4 types of jump statements -->
+
+1. continue
+2. break
+3. goto
+4. return

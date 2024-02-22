@@ -1,0 +1,23 @@
+In the integer data type there are variuos type of modifiers -->
+
+1. short int
+2. unsigned short int
+3. unsigned int
+4. int
+5. long int
+6. unsigned long int
+7. long long int
+8. unsigned long long int
+
+
+In the char data type there are only two types of modifiers -->
+
+1. signed
+2. unsigned
+
+
+In the float data type there are only two types of modifiers -->
+
+1. float
+2. double
+3. long double

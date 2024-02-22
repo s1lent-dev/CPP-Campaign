@@ -1,0 +1,5 @@
+There are three ways to call a function in CPP -->
+
+1. Call by value
+2. Call by pointers
+3. Call by reference

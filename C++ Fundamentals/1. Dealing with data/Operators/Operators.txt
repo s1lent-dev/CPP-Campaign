@@ -1,0 +1,7 @@
+There are six types of operators in c++
+1. Arithmatic operators --> + , - , / , * , ++ , -- , % 
+2. Assignment operators --> = , += , -+ , /= , *= , %= 
+3. Relational operators --> == , != , > , < , <= , >=
+4. Logical operators --> ! , && , || 
+5. Bitwise operators --> ~ , & , | , ^ , >> , << 
+6. Special operators --> ?: , sizeof , & , -> , . 

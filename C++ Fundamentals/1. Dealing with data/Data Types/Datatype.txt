@@ -1,0 +1,9 @@
+*There are three types of data types in C++ -->
+
+1. Primitive/built In data types --> int, float, double, char, bool, wchar_t
+
+2. Non-Primitive/ Derived data types --> string, array, pointer, reference, function, stack, queue, Linked list, graph, trees.
+
+3. User Defined data types --> class, struct, union, enum, typedef
+
+
