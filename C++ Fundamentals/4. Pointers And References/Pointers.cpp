@@ -118,7 +118,7 @@ int main(){
     cout << operate_ptr(10,20,add_ptr) << " " << operate_ptr(10,20,sub_ptr) << " " << operate_ptr(10,20,mul_ptr) << endl;
     // or
     cout << operate_ptr(10,20,add) << " " << operate_ptr(10,20,sub) << " " << operate_ptr(10,20,mul) << "\n" << endl;
-   
+    
     // 6] Pointers to pointers -->
     
     cout << "Printing the values after utilizing pointers to pointers" << endl;

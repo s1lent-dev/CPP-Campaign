@@ -1,6 +1,6 @@
 Arrays:
-Sorting Algorithms (e.g., Bubble Sort, Insertion Sort, Merge Sort, Quick Sort)
-Searching Algorithms (e.g., Linear Search, Binary Search)
+Sorting Algorithms (e.g., Bubble Sort, Insertion Sort, Selection sort,Merge Sort, Quick Sort, Radix Sort, Heap Sort, Shell Sort, Bucket Sort)
+Searching Algorithms (e.g., Linear Search, Binary Search, Interpolation Search, Ternary Search)
 Dynamic Programming on Arrays (e.g., Kadane's Algorithm)
 Sliding Window Technique
 Prefix Sum
@@ -23,6 +23,8 @@ Matrix Search
 Spiral Order Traversal
 Set Matrix Zeroes
 Rotate Image
+
+
 Strings:
 String Matching Algorithms (e.g., Naive String Matching, KMP)
 Longest Common Subsequence (LCS)

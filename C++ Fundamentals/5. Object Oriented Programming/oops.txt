@@ -1,0 +1,10 @@
+Classes, 
+Objects, 
+Constructors/Destructors, 
+Abstraction, Abstract class in C++
+Encapsulation, 
+Function overriding & Function overloading,
+Inheritance - Single inheritance, multilevel inheritance, multiple inheritance, hierarchial inheritance, Hybrid Inheritance,
+Polymorphism,
+Operator overloading
+Other concepts of oops
