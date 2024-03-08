@@ -1,0 +1,3 @@
+1. Lambda expression 
+2. Multithreading
+3. Lvalue and Rvalue

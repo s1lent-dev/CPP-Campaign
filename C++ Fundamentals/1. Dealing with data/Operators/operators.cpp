@@ -160,6 +160,5 @@ int main() {
     Dot* Dot_ptr;
     Dot_ptr -> dot();
 
-
     return 0;
 }

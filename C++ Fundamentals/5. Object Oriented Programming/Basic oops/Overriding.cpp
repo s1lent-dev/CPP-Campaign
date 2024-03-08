@@ -42,7 +42,7 @@ int main(){
     ICICI icici;
     Axis axis;
 
-    cout << "Calling Function by child class object -->" << endl;
+    cout << "Calling Function by child class object -->" << endl; //* can be called without using virtaul functions in parent class
     sbi.RBI::interest(); // Calling function by child class object
     sbi.interest();
     icici.interest();
@@ -55,7 +55,7 @@ int main(){
     RBI* rbi2 = new ICICI;
     RBI* rbi3 = new Axis;
 
-    cout << "Calling Function by parent class dynamic pointer -->" << endl;
+    cout << "Calling Function by parent class dynamic pointer -->" << endl; //* can't be called without using virtaul functions in parent class
     rbi1->RBI::interest();
     rbi1->interest();
     rbi2->interest();
