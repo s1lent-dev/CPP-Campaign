@@ -83,7 +83,56 @@ class binarySearchTree{
             postorderTraversal(root->right);
             cout << root->data << " ";
         }
+        
+        //* Search element in a BST
+        bool searchNode(Node* root, int data){
+            if(!root) return false;
+            if(data == root->data) return true;
+            if(data < root->data){
+                searchNode(root->left, data);
+            }
+            if(data > root->data){
+                searchNode(root->right, data);
+            }
+        }
 
+        //* Delete a Node from BST
+        Node* deleteNode(Node* root, int data){
+            if(!root) return nullptr;
+            if(root->data == data){
+                if(!root->left && !root->right){
+                    delete root;
+                    return nullptr;
+                }else if(!root->right){
+                    Node* temp1 = root->left;
+                    delete root;
+                    return temp1;
+                }else if(!root->left){
+                    Node* temp2 = root->right;
+                    delete root;
+                    return temp2;
+                }else if(root->left && root->right){
+                    int min = minData(root->right) -> data;
+                    root->data = min;
+                    root->right = deleteNode(root->right, min);
+                    return root;
+                }
+            }else if(data < root->data){
+                root->left = deleteNode(root->left, data);
+                return root;
+            }else if(data > root->data){
+                root->right = deleteNode(root->right, data);
+                return root;
+            }
+        }
+
+        //* Function to find Minumum element to the right of the node to be deleted
+        Node* minData(Node* root){
+            if(!root->left) return root;
+            root = root->left;
+        }
+
+        //* Graphical representation of tree
         void printTree(Node* root, int depth = 0) {
         if (root == nullptr) return;
         // Print right child first
@@ -103,6 +152,41 @@ int main(){
 
     bst->takeInput(root);
     
+    cout << "Level Order Traversal of the Tree: " << endl;
+    bst->levelorderTraversal(root);
+
+    cout << "Pre Order Traversal of the Tree: " << endl;
+    bst->preorderTraversal(root);
+    cout << endl;
+
+    cout << "In Order Traversal of the Tree: " << endl;
+    bst->inordertraversal(root);
+    cout << endl;
+
+    cout << "Post Order Traversal of the Tree: " << endl;
+    bst->postorderTraversal(root);
+    cout << endl;
+
+    cout << "Graphical Represenatation of Tree: " << endl;
+    bst->printTree(root);
+    
+    int data;
+    cout << "Enter the data to search iun BST: " << endl;
+    cin >> data;
+
+    bst->searchNode(root, data);
+    if(bst->searchNode(root, data)){
+        cout << "The number found in BST" << endl;
+    }else{
+        cout << "The number is not present in the BST" << endl;
+    }
+
+    int val;
+    cout << "Enter the Node to be deleted: " << endl;
+    cin >> val;
+    bst->deleteNode(root, val);
+    
+    cout << "The BST after deletion of the nodes: " << endl;
     cout << "Level Order Traversal of the Tree: " << endl;
     bst->levelorderTraversal(root);
 
