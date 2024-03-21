@@ -1,10 +1,25 @@
-Classes, 
-Objects, 
-Constructors/Destructors, 
-Abstraction, Abstract class in C++
-Encapsulation, 
-Function overriding & Function overloading,
-Inheritance - Single inheritance, multilevel inheritance, multiple inheritance, hierarchial inheritance, Hybrid Inheritance,
-Polymorphism,
-Operator overloading
-Other concepts of oops
+Basic concepts of oops -->
+
+1. Classes
+2. Constructors
+   2.1 Default Constructor
+   2.2 Parameterized Constructor
+   2.3 Copy Constructor
+   2.4 Overloaded Constructor
+   2.5 Dynamic Constructor
+   2.6 Outside Constructor
+   2.7 Destructor
+3. Abstraction
+4. Inheritance
+   4.1 Single Inheritance
+   4.2 Multilevel Inheritance
+   4.3 Multiple Inheritance
+   4.4 Hierarchical Inheritance --> Its Hierarchical multilevel inheritance like a tree
+   4.5 Hybrid Inheritance --> Its a combination of multilevel inheritance and multiple inheritance
+   4.6 Virtual Inheritance using virtual derived class --> * Its a combination of multiple inheritance and polymorphism
+5. Overloading
+   5.1 Constructor overloading
+   5.2 Functions Overloading
+   5.3 Oparator overloading
+6. Overriding
+7. Polymorphism
