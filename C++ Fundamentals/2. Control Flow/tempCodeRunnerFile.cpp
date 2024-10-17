@@ -1,0 +1,1 @@
+ cout << "labhesh lala" << endl; // will not work because return function terminated the int main() function with output 0

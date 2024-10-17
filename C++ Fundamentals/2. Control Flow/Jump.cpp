@@ -16,7 +16,6 @@ int main()
     */
 
     // continue
-
     for (int i = 0; i < 10; i++)
     {
 
@@ -79,6 +78,6 @@ int main()
         }
         cout << i << " ";
     }
-    cout << "wtf" << endl; // will not work because return function terminated the int main() function with output 0;
+    cout << "labhesh lala" << endl; // will not work because return function terminated the int main() function with output 0;
     
 }

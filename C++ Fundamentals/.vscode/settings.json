@@ -6,6 +6,7 @@
         "*.c": "cpp",
         "*.h": "cpp",
         "ostream": "cpp",
-        "bits/stdc++.h": "cpp"
+        "bits/stdc++.h": "cpp",
+        "vector": "cpp"
     }
 }
